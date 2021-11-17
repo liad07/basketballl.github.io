@@ -1,12 +1,15 @@
 <!doctype html>
 <div id="app"></div>
 <meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href=".idea/style.css">
 <center>
     <p>לוח עבירות כדורסל</p>
 <div>
-    <button onclick="myFunction(this, 'red')"></button>
-
+    <button onclick="myFunction(this, 'yellow')">-----</button>
+    <button onclick="myFunction(this, 'yellow')">-----</button>
+    <button onclick="myFunction(this, 'yellow')">-----</button>
+    <button onclick="myFunction(this, 'yellow')">-----</button>
+    <button onclick="myFunction(this, 'yellow')">-----</button>
     <script>
         var con=0;
         function myFunction(elmnt,clr) {
@@ -16,6 +19,8 @@
             elmnt.style.backgroundColor = "yellow";
            if(con%4===0)
               elmnt.style.backgroundColor = "red";
+            if(con%5===0)
+                elmnt.style.backgroundColor = "red";
         }
     </script>
     <a href="index.html">
